@@ -30,3 +30,6 @@ map_out/
 # 板上抓图（体积大，放到 release / 网盘）
 *.bmp
 _screenshot*.png
+
+# Office 打开文档时生成的锁文件
+~$*
