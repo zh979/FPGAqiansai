@@ -1,0 +1,7 @@
+* text=auto
+
+*.bit  binary
+*.xsa  binary
+*.bin  binary
+*.docx binary
+*.png  binary

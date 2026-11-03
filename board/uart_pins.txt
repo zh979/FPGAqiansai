@@ -1,0 +1,6 @@
+RS232/RS485串口 |  |  | 
+uart_rxd | input | K14 | 串口接收端UART2_RX
+uart_txd | output | M15 | 串口发送端
+ATK MODULE |  |  | 
+uart_rx | input | T19 | RXD端口 UART3_RX
+uart_tx | output | J15 | TXD端口

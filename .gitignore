@@ -1,0 +1,32 @@
+# Vivado / Vitis 生成物
+*.jou
+*.log
+*.str
+*.xpr
+*.dcp
+*.bit
+*.ltx
+*.hdf
+*.xsa
+.cache/
+.runs/
+.sdk/
+
+# 例外: build/hw/ 下的预构建产物要入库。
+# README §3「快速上板」就是让评委直接用这两个文件，不装 HLS、不跑综合。
+!build/hw/design_1_wrapper.bit
+!build/hw/design_1_wrapper.xsa
+.DS_Store
+__pycache__/
+*.pyc
+
+# 训练中间产物（权重不入库，用 export_weights.py 重新生成）
+*.pth
+folded_weights/
+logs/
+check_out/
+map_out/
+
+# 板上抓图（体积大，放到 release / 网盘）
+*.bmp
+_screenshot*.png
