@@ -29,7 +29,7 @@ PL 内是 HLS 综合出的 128 路并行卷积加速器，PS 内是预处理、�
 ## 2. 器件与工具链
 
 - **器件**：`xc7z020clg400-2`（Zynq-7000 SoC，双 Cortex-A9 @667 MHz + Artix-7 可编程逻辑）
-- **开发板**：领航者 ZYNQ-7020 开发板 + 自制底板（DVP 相机口、HDMI、CAN、激光使能 IO）
+- **开发板**：领航者 ZYNQ-7020 开发板
 - **工具**：Vivado / Vitis **2019.2**（HLS 顶层 `conv`，目标时钟 5.5 ns，见 `build/hls_build.tcl`）
 - **PS 侧**：Xilinx Standalone（裸机），C/C++，无操作系统
 - **模型侧**：PyTorch 训练 + `src/tools/export_weights.py` 导出 BN 折叠后的定点权重
